@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg:           #05050F;
+  --bg-2:         #08081A;
+  --card:         #0C0C22;
+  --card-2:       #0F0F28;
+  --violet:       #7B2FFF;
+  --violet-soft:  #9B5FFF;
+  --cyan:         #00C2FF;
+  --gradient:     linear-gradient(135deg, #7B2FFF 0%, #00C2FF 100%);
+  --gradient-r:   linear-gradient(135deg, #00C2FF 0%, #7B2FFF 100%);
+  --border:       rgba(123, 47, 255, 0.18);
+  --border-h:     rgba(123, 47, 255, 0.55);
+  --glow-sm:      0 0 30px rgba(123, 47, 255, 0.2);
+  --glow-md:      0 0 60px rgba(123, 47, 255, 0.3);
+  --glow-lg:      0 0 120px rgba(123, 47, 255, 0.35);
+  --text:         #FFFFFF;
+  --text-2:       #8892B0;
+  --text-3:       #3D3D5C;
+  --radius:       20px;
+  --radius-sm:    12px;
+  --ease:         cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Syne', sans-serif;
+  margin: 0;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) { 
+  * { 
+    animation: none !important; 
+    transition: none !important; 
+  } 
+}
